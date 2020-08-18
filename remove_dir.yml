@@ -1,0 +1,8 @@
+---
+- name: This playbook creates a directory
+  hosts: all
+  tasks:
+  - name: Creating directory with ansadmin priviliges
+    file:
+      path: /home/ansadmin/cloudiarPath
+      state: absent

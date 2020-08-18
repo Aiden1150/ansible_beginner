@@ -1,0 +1,9 @@
+---
+- name: This playbook create file or directory
+  hosts: all
+  become: true
+  tasks:
+  - name: Creating file
+    file:
+      path: /home/ansadmin/cloudiarfile
+      state: touch
